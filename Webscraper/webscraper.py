@@ -5,7 +5,8 @@ import requests
 class NewsStories:
     def __init__(self, base_url, latest_news_url, article_tag,
                  article_class, title_tag, title_class, summary_tag,
-                 summary_class, embedded_title, link_class):
+                 summary_class, embedded_title, link_class,
+                 website_name):
         self.base_url = base_url
         self.latest_news_url = latest_news_url
         self.article_tag = article_tag
@@ -16,6 +17,7 @@ class NewsStories:
         self.summary_class = summary_class
         self.embedded_title = embedded_title
         self.link_class = link_class
+        self.website_name = website_name
 
     def get_news(self):
         r = requests.get(self.latest_news_url)
