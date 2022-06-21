@@ -1,9 +1,14 @@
 from webscraper import NewsStories
 from news_dao import NewsDao
 from datetime import datetime
+import logging
+import sys
 
 # sets today's date required for latest news in 'Eurek Alert' url
 year, month, day = datetime.today().strftime('%Y-%m-%d').split("-")
+
+# setup logger
+logging.basicConfig(level=logging.INFO)
 
 
 def main():
@@ -20,6 +25,8 @@ def main():
                                          link_class=None,
                                          website_name="Eurek-Alert")
 
+    logging.info("Eurekalert news successfully scraped")
+
     nature_news_object = NewsStories(base_url="https://www.nature.com",
                                      latest_news_url="https://www.nature.com/latest-news",
                                      article_tag='li',
@@ -33,6 +40,8 @@ def main():
                                      link_class=None,
                                      website_name="Nature")
 
+    logging.info("Nature news successfully scraped")
+
     sci_org_news_object = NewsStories(base_url="https://www.science.org",
                                       latest_news_url="https://www.science.org/news/all-news",
                                       article_tag='article',
@@ -45,16 +54,21 @@ def main():
                                       link_class='text-reset animation-underline',
                                       website_name='Science.org')
 
+    logging.info("Science.org news successfully scraped")
+
     news_objects = [eurekalert_news_object, nature_news_object, sci_org_news_object]
 
     # Initialise database connection
+    logging.info("Initialising MySQL connection")
     db = NewsDao(host="localhost", user="root", password="pass", db="newsstories")
     db.connect_to_db()
     db.db_init()
 
+    logging.info("Inserting news to database...")
     for news in news_objects:
         db.set_news_object(news)
         db.insert_news()
 
 if __name__ == '__main__':
     main()
+    logging.info("Database appended successfully!")

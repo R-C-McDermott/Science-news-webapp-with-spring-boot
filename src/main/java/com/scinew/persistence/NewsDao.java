@@ -1,4 +1,5 @@
 package com.scinew.persistence;
 
-public class NewsDao {
+public interface NewsDao {
+
 }
