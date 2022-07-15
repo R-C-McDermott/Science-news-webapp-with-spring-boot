@@ -7,16 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Science-news-webapp-with-spring-boot" />
+        <module name="NewsAPI" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Science-news-webapp-with-spring-boot" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Science-news-webapp-with-spring-boot" options="-parameters" />
+      <module name="NewsAPI" options="-parameters" />
     </option>
   </component>
 </project>

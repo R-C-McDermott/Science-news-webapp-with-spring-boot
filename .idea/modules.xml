@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Science-news-webapp-with-spring-boot.iml" filepath="$PROJECT_DIR$/.idea/Science-news-webapp-with-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Science-news-webapp-with-spring-boot.iml" filepath="$PROJECT_DIR$/../Science-news-webapp-with-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_scraper/web_scraper.iml" filepath="$PROJECT_DIR$/web_scraper/web_scraper.iml" />
     </modules>
   </component>
 </project>
