@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2cab743-2566-4339-a6a9-7b7a1d5777a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/application/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/util/NewsRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsApplication/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsApplication/src/main/java/com/sciapplication/app/NewsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsApplication/src/main/java/com/sciapplication/controllers/NewsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsApplication/src/main/java/com/sciapplication/entities/News.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsApplication/src/main/java/com/sciapplication/model/service/NewsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsApplication/src/main/java/com/sciapplication/model/service/NewsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/application/NewsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/application/NewsApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/entities/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/entities/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/persistence/NewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/persistence/NewsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/persistence/NewsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/persistence/NewsDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/resource/NewsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/resource/NewsResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/service/NewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/service/NewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/service/NewsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsAPI/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NewsAPI/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsAPI/src/main/java/com/scinew/application/ServletInitializer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -36,13 +36,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -63,21 +65,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ryan/Desktop/Java Local Repos/Science-news-webapp-with-spring-boot/Webscraper/main.py&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Ryan/Desktop/Java Local Repos/Science-news-webapp-with-spring-boot",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryan\Desktop\Java Local Repos\Science-news-webapp-with-spring-boot" />
       <recent name="C:\Users\Ryan\Desktop\Java Local Repos\Science-news-webapp-with-spring-boot\web_scraper" />
       <recent name="C:\Users\Ryan\Desktop\Java Local Repos\Science-news-webapp-with-spring-boot\NewsAPI\src\main\resources" />
       <recent name="C:\Users\Ryan\Desktop\Java Local Repos\Science-news-webapp-with-spring-boot\NewsAPI\src\main\java" />
